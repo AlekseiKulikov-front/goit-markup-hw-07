@@ -1,0 +1,42 @@
+.work-examples-section {
+  padding-top: var(--section-pt);
+  padding-bottom: var(--section-pb);
+}
+.service-filter-list {
+  margin-bottom: 34px;
+}
+.service-list-item:not(:first-child) {
+  margin-left: 8px;
+}
+.services-section {
+  padding-top: var(--section-pt);
+  padding-bottom: 34px;
+}
+.service-filter-list {
+  display: flex;
+  justify-content: center;
+}
+.service-list-item {
+  margin-left: not;
+}
+.work-selection-btn {
+  min-width: 73px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--main-color);
+  background: #f5f4fa;
+  border-radius: 4px;
+  padding: 6px 22px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.work-selection-btn:focus,
+.work-selection-btn:hover {
+  background: var(--blue-color);
+  color: var(--white-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+  cursor: pointer;
+}

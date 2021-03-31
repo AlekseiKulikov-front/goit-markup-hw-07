@@ -1,0 +1,21 @@
+.header,
+.portfolio-header {
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+.portfolio-header::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  left: 0px;
+  top: 80px;
+  border: 1px solid #ececec;
+}
+.portfolio-header .conteiner {
+  display: flex;
+  align-items: center;
+}
+.header .conteiner {
+  display: flex;
+  align-items: center;
+}
