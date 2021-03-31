@@ -25,6 +25,13 @@
   border: transparent;
   border: 1px solid rgba(0, 0, 0, 0.1);
   box-sizing: border-box;
+  &:hover {
+    fill: var(--blue-color);
+  }
+  &:focus {
+    fill: var(--blue-color);
+    outline: none;
+  }
 }
 .modal-close-icon {
   position: absolute;
@@ -32,13 +39,7 @@
   top: 50%;
   transform: translate(-50%, -50%);
 }
-.modal-close-btn:hover {
-  fill: var(--blue-color);
-}
-.modal-close-btn:focus {
-  fill: var(--blue-color);
-  outline: none;
-}
+
 .is-hidden {
   opacity: 0;
   visibility: hidden;
