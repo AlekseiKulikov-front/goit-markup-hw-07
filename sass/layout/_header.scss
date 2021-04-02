@@ -1,9 +1,8 @@
-.header,
-.portfolio-header {
+.header{
   padding-top: 25px;
   padding-bottom: 25px;
 }
-.portfolio-header::after {
+.header::after {
   content: '';
   position: absolute;
   width: 100%;
@@ -11,11 +10,8 @@
   top: 80px;
   border: 1px solid #ececec;
 }
-.portfolio-header .conteiner {
-  display: flex;
-  align-items: center;
-}
 .header .conteiner {
   display: flex;
   align-items: center;
 }
+
