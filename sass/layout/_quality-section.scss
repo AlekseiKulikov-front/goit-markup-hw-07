@@ -1,18 +1,18 @@
-.quality-section {
+.quality {
   padding-top: var(--section-pt);
   padding-bottom: var(--section-pb);
 }
-.quality-list {
+.quality__list {
   display: flex;
   margin-left: -30px;
   margin-top: -30px;
 }
-.quality-item {
+.quality__item {
   flex-basis: calc(100% / 4 - 30px);
   margin-left: 30px;
   margin-top: 30px;
 }
-.quality-heading {
+.quality__heading {
   font-weight: bold;
   font-size: 14px;
   line-height: 1.14;
@@ -21,14 +21,14 @@
   color: var(--main-color);
   margin-bottom: 10px;
 }
-.quality-paragraph {
+.quality__paragraph {
   font-weight: normal;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--second-color);
 }
-.quality-icon-conteiner {
+.quality__icon-conteiner {
   display: flex;
   justify-content: center;
   align-items: center;
