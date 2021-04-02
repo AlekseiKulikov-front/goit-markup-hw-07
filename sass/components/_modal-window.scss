@@ -12,7 +12,7 @@
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
 }
-.modal-close-btn {
+.modal-close__btn {
   position: absolute;
   top: 8px;
   right: 8px;
@@ -33,7 +33,7 @@
     outline: none;
   }
 }
-.modal-close-icon {
+.modal-close__icon {
   position: absolute;
   left: 50%;
   top: 50%;

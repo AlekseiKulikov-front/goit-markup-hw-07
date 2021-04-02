@@ -33,18 +33,18 @@
             </li>
           </ul>
         </nav>
-        <ul class="contact-list list">
-          <li class="contact-item">
-            <a class="link contact-link" href="mailto:info@devstudio.com">
-              <svg width="16px" height="12px" class="contact-icon">
+        <ul class="contact list">
+          <li class="contact__item">
+            <a class="link contact__link" href="mailto:info@devstudio.com">
+              <svg width="16px" height="12px" class="contact__icon">
                 <use href="./images/sprite.svg#icon-envelope-hover"></use>
               </svg>
               info@devstudio.com
             </a>
           </li>
-          <li class="contact-item">
-            <a class="link contact-link" href="tel:+380961111111">
-              <svg width="10px" height="16px" class="contact-icon">
+          <li class="contact__item">
+            <a class="link contact__link" href="tel:+380961111111">
+              <svg width="10px" height="16px" class="contact__icon">
                 <use href="./images/sprite.svg#icon-smartphone"></use>
               </svg>
               +38 096 111 11 11</a
@@ -368,28 +368,28 @@
           <ul class="footer-social-list list">
             <li class="footer-social-list__item">
               <a href="" class="footer-social-list__link link">
-                <svg width="20px" height="20px" class="social-footer-list-icon">
+                <svg width="20px" height="20px" class="footer-social-list__icon">
                   <use href="./images/sprite.svg#icon-instagram-2"></use>
                 </svg>
               </a>
             </li>
             <li class="footer-social-list__item">
               <a href="" class="footer-social-list__link link">
-                <svg width="20px" height="20px" class="social-footer-list-icon">
+                <svg width="20px" height="20px" class="footer-social-list__icon">
                   <use href="./images/sprite.svg#icon-twitter-1"></use>
                 </svg>
               </a>
             </li>
             <li class="footer-social-list__item">
               <a href="" class="footer-social-list__link link">
-                <svg width="20px" height="20px" class="social-footer-list-icon">
+                <svg width="20px" height="20px" class="footer-social-list__icon">
                   <use href="./images/sprite.svg#icon-facebook-1"></use>
                 </svg>
               </a>
             </li>
             <li class="footer-social-list__item">
               <a href="" class="footer-social-list__link link">
-                <svg width="20px" height="20px" class="social-footer-list-icon">
+                <svg width="20px" height="20px" class="footer-social-list__icon">
                   <use href="./images/sprite.svg#icon-linkedin-1"></use>
                 </svg>
               </a>
@@ -400,11 +400,11 @@
         <form class="footer-form">
           <b class="footer-b">Подпишитесь на рассылку</b>
           <label class="footer-form-field">
-            <input name="user-email" class="footer-form-input" type="email" placeholder="E-mail" />
+            <input name="user-email" class="footer-form-field__input" type="email" placeholder="E-mail" />
           </label>
-          <button class="footer-form-btn button" type="submit">
+          <button class="footer-form__btn button" type="submit">
             Подписаться
-            <svg width="24px" height="24px" class="footer-btn-icon">
+            <svg width="24px" height="24px" class="footer-form__btn-icon">
               <use href="./images/sprite.svg#icon-icon-send"></use>
             </svg>
           </button>
@@ -413,47 +413,54 @@
     </footer>
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-        <button type="button" class="modal-close-btn" data-modal-close>
-          <svg width="18px" height="18px" class="modal-close-icon">
+        <button type="button" class="modal-close__btn" data-modal-close>
+          <svg width="18px" height="18px" class="modal-close__icon">
             <use href="./images/sprite.svg#icon-close-black-18dp-2-1"></use>
           </svg>
         </button>
-        <p class="form-heading">Оставьте свои данные, мы вам перезвоним</p>
+        <p class="modal-form__heading">Оставьте свои данные, мы вам перезвоним</p>
         <form class="modal-form" action="#">
-          <label class="modal-form-field"
+          <label class="modal-form__field"
             >Имя
-            <span class="modal-form-wrapper">
-              <input name="user-name" class="form-input" type="text" required minlength="2" />
-              <svg width="18px" height="18px" class="modal-form-icon">
+            <span class="modal-form__wrapper">
+              <input name="user-name" class="modal-form__input" type="text" required minlength="2" />
+              <svg width="18px" height="18px" class="modal-form__icon">
                 <use href="./images/sprite.svg#icon-person-black-18dp-1"></use>
               </svg>
             </span>
           </label>
-          <label class="modal-form-field"
+          <label class="modal-form__field"
             >Телефон
-            <span class="modal-form-wrapper">
-              <input name="user-phone" class="form-input" type="tel" required pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" title="066-111-11-11" />
-              <svg width="18px" height="18px" class="modal-form-icon">
+            <span class="modal-form__wrapper">
+              <input
+                name="user-phone"
+                class="modal-form__input"
+                type="tel"
+                required
+                pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}"
+                title="066-111-11-11"
+              />
+              <svg width="18px" height="18px" class="modal-form__icon">
                 <use href="./images/sprite.svg#icon-phone-black-18dp-1"></use>
               </svg>
             </span>
           </label>
-          <label class="modal-form-field"
+          <label class="modal-form__field"
             >Почта
-            <span class="modal-form-wrapper">
-              <input name="user-email" class="form-input" type="email" />
-              <svg width="18px" height="18px" class="modal-form-icon">
+            <span class="modal-form__wrapper">
+              <input name="user-email" class="modal-form__input" type="email" />
+              <svg width="18px" height="18px" class="modal-form__icon">
                 <use href="./images/sprite.svg#icon-email-black-18dp-1"></use>
               </svg>
             </span>
           </label>
-          <label class="modal-form-field"
+          <label class="modal-form__field"
             >Комментарий
-            <textarea class="modal-message" name="user-message" placeholder="Введите текст"></textarea>
+            <textarea class="modal-form__message" name="user-message" placeholder="Введите текст"></textarea>
           </label>
-          <input name="user-term" id="user-term" class="modal-form-term visually-hidden" type="checkbox" />
-          <label for="user-term" class="modal-form-check-desc">Соглашаюсь с рассылкой и принимаю &nbsp; <a href="">Условия договора</a></label>
-          <button class="modal-form-btn button" type="submit">Отправить</button>
+          <input name="user-term" id="user-term" class="modal-form__term visually-hidden" type="checkbox" />
+          <label for="user-term" class="modal-form__check-desc">Соглашаюсь с рассылкой и принимаю &nbsp; <a href="">Условия договора</a></label>
+          <button class="modal-form__btn button" type="submit">Отправить</button>
         </form>
       </div>
     </div>
