@@ -1,26 +1,22 @@
-.work-examples {
+.filter {
   padding-top: var(--section-pt);
   padding-bottom: var(--section-pb);
 }
-.work-examples__list {
-  margin-bottom: 34px;
+.filter__list {
+  margin-bottom: 50px;
 }
-.work-examples__item {
+.filter__item {
   &:not(:first-child) {
     margin-left: 8px;
   }
 }
 
-.work-examples {
-  padding-top: var(--section-pt);
-  padding-bottom: 34px;
-}
-.work-examples__list {
+.filter__list {
   display: flex;
   justify-content: center;
 }
 
-.work-examples__btn {
+.filter__btn {
   min-width: 73px;
   font-weight: 500;
   font-size: 16px;

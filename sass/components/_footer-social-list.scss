@@ -1,13 +1,13 @@
 .footer-social {
   margin-left: 70px;
 }
-.footer-social-list {
+.footer-social__list {
   display: flex;
   &:not(:last-child) {
     margin-right: 10px;
   }
 }
-.footer-social-list__item {
+.footer-social__item {
   &:not(:last-child) {
     margin-right: 10px;
   }
@@ -22,11 +22,11 @@
   color: var(--white-color);
   margin-bottom: 16px;
 }
-.footer-social-list__icon {
+.footer-social__icon {
   fill: var(--white-color);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.footer-social-list__link {
+.footer-social__link {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -39,8 +39,8 @@
   &:hover {
     background-color: var(--blue-color);
   }
-  &:focus .social-footer-list-icon,
-  &:hover .social-footer-list-icon {
+  &:focus .social-footer__icon,
+  &:hover .social-footer__icon {
     fill: var(--white-color);
   }
 }

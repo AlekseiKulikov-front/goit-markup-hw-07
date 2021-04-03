@@ -4,7 +4,7 @@
   max-width: 570px;
   margin-left: 94px;
 }
-.footer-b {
+.footer-form__description {
   font-family: var(--main-font-family);
   font-weight: bold;
   text-transform: uppercase;
@@ -14,7 +14,7 @@
   color: var(--white-color);
   margin-bottom: 20px;
 }
-.footer-form-field__input {
+.footer-form__input {
   width: 358px;
   height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -58,7 +58,7 @@
   }
 }
 
-.footer-form__btn-icon {
+.footer-form__icon {
   fill: var(--white-color);
   margin-left: 10px;
 }
