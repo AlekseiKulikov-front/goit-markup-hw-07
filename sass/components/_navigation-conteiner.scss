@@ -2,11 +2,11 @@
   display: flex;
   align-items: center;
 }
-.menu .link.current {
+.menu__list .navigation__current {
   position: relative;
   color: var(--blue-color);
 }
-.current::after {
+.navigation__current::after {
   content: '';
   position: absolute;
   left: 0px;
@@ -16,9 +16,8 @@
   background: #2196f3;
   border-radius: 2px;
 }
-.menu {
+.menu__list {
   display: flex;
-  
 }
 .menu__item {
   &:not(:last-child) {

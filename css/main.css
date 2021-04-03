@@ -79,7 +79,7 @@ button {
   padding-bottom: 25px;
 }
 
-.header::after {
+.header_portfolio::after {
   content: '';
   position: absolute;
   width: 100%;
@@ -98,12 +98,12 @@ button {
   align-items: center;
 }
 
-.menu .link.current {
+.menu__list .navigation__current {
   position: relative;
   color: var(--blue-color);
 }
 
-.current::after {
+.navigation__current::after {
   content: '';
   position: absolute;
   left: 0px;
@@ -114,7 +114,7 @@ button {
   border-radius: 2px;
 }
 
-.menu {
+.menu__list {
   display: flex;
 }
 
@@ -135,7 +135,7 @@ button {
   color: var(--blue-color);
 }
 
-.menu__logo-link {
+.navigation__logo {
   font-family: Raleway;
   font-style: normal;
   font-weight: bold;
@@ -146,11 +146,11 @@ button {
   margin-right: 93px;
 }
 
-.menu__logo-span {
+.navigation__logo-span {
   color: var(--logo-color);
 }
 
-.contact {
+.contact__list {
   display: flex;
   margin-left: auto;
 }
@@ -267,7 +267,7 @@ button {
   color: var(--second-color);
 }
 
-.quality__icon-conteiner {
+.quality__tumb {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -316,7 +316,7 @@ button {
   color: var(--white-color);
 }
 
-.works__heading {
+.works__title {
   font-weight: bold;
   font-size: 36px;
   line-height: 1.16;
@@ -357,7 +357,7 @@ button {
   border-radius: 0px 0px 4px 4px;
 }
 
-.team__heading {
+.team__name {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
@@ -367,7 +367,7 @@ button {
   margin-bottom: 10px;
 }
 
-.team__paragraph {
+.team__position {
   font-weight: normal;
   font-size: 16px;
   line-height: 1.18;
@@ -377,7 +377,7 @@ button {
   margin-bottom: 16px;
 }
 
-.team__list-content-wrapper {
+.team__box {
   padding: 30px 32px;
 }
 
