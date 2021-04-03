@@ -875,40 +875,40 @@ button {
   cursor: pointer;
 }
 
-.cards-list {
+.cards {
   display: flex;
   flex-wrap: wrap;
   margin-left: -30px;
   margin-top: -30px;
 }
 
-.cards-list-item {
+.cards__item {
   flex-basis: calc(100% / 3 - 30px);
   margin-left: 30px;
   margin-top: 30px;
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.portofolio-link {
+.cards__link {
   display: inline-block;
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.portofolio-link:hover, .portofolio-link:focus {
+.cards__link:hover, .cards__link:focus {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-.portofolio-link:hover .overlay-text,
-.portofolio-link:focus .overlay-text {
+.cards__link:hover .overlay__text,
+.cards__link:focus .overlay__text {
   transform: translateY(0%);
 }
 
-.card-overlay {
+.cards__overlay {
   position: relative;
   overflow: hidden;
 }
 
-.overlay-text {
+.overlay__text {
   height: 100%;
   position: absolute;
   left: 0px;
@@ -925,12 +925,12 @@ button {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.card-text {
+.cards__text {
   padding: 20px 24px;
   border: 1px solid #eeeeee;
 }
 
-.portofolio-heading {
+.cards__heading {
   font-family: var(--main-font-family);
   font-weight: bold;
   font-size: 18px;
@@ -941,7 +941,7 @@ button {
   margin-bottom: 0px;
 }
 
-.portfolio-paragraph {
+.cards__paragraph {
   font-family: var(--main-font-family);
   font-weight: normal;
   font-size: 16px;

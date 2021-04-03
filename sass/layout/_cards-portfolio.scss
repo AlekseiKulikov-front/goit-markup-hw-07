@@ -1,32 +1,75 @@
-.cards-list {
+.work-examples {
+  padding-top: var(--section-pt);
+  padding-bottom: var(--section-pb);
+}
+.work-examples__list {
+  margin-bottom: 34px;
+}
+.work-examples__item {
+  &:not(:first-child) {
+    margin-left: 8px;
+  }
+}
+
+.work-examples {
+  padding-top: var(--section-pt);
+  padding-bottom: 34px;
+}
+.work-examples__list {
+  display: flex;
+  justify-content: center;
+}
+
+.work-examples__btn {
+  min-width: 73px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--main-color);
+  background: #f5f4fa;
+  border-radius: 4px;
+  padding: 6px 22px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:focus,
+  &:hover {
+    background: var(--blue-color);
+    color: var(--white-color);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    cursor: pointer;
+  }
+}
+.cards {
   display: flex;
   flex-wrap: wrap;
   margin-left: -30px;
   margin-top: -30px;
 }
-.cards-list-item {
+.cards__item {
   flex-basis: calc(100% / 3 - 30px);
   margin-left: 30px;
   margin-top: 30px;
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.portofolio-link {
+.cards__link {
   display: inline-block;
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   &:hover,
   &:focus {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   }
-  &:hover .overlay-text,
-  &:focus .overlay-text {
+  &:hover .overlay__text,
+  &:focus .overlay__text {
     transform: translateY(0%);
   }
 }
-.card-overlay {
+.cards__overlay {
   position: relative;
   overflow: hidden;
 }
-.overlay-text {
+.overlay__text {
   height: 100%;
   position: absolute;
   left: 0px;
@@ -42,12 +85,12 @@
   transform: translateY(100%);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.card-text {
+.cards__text {
   padding: 20px 24px;
   border: 1px solid #eeeeee;
 }
 
-.portofolio-heading {
+.cards__heading {
   font-family: var(--main-font-family);
   font-weight: bold;
   font-size: 18px;
@@ -57,7 +100,7 @@
   margin-top: 20px;
   margin-bottom: 0px;
 }
-.portfolio-paragraph {
+.cards__paragraph {
   font-family: var(--main-font-family);
   font-weight: normal;
   font-size: 16px;
